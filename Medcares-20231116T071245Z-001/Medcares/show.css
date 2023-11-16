@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background:#020412 ;
+}
+.hero{
+    height: 200vh;
+    width: 100%;
+    /* background-color: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)); */
+    background-color: rgb(204, 204, 228);
+    background-color: #020412;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+.nav-logo{
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-logo:hover{
+color: #f44336;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+
+/* ------CSS for sticky navbar while scrolling------ */
+nav.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+    z-index: 2;
+}
+nav.sticky ul{
+    width: auto;
+}
+
+.form-box{
+    width: 1200px;
+    height: 200vh;
+    position:relative;
+    margin: 4% auto;    
+    /* background: rgb(219, 209, 209); */
+    padding: 25px;
+    border-radius: 30px;
+     overflow: hidden;
+}
+.button-box{
+    width: 90%;
+    height: 5%;
+    margin: 25px auto;
+    display:flex;
+    margin-top:10px;
+    position: relative;
+    box-shadow: 0 0 30px 9px #4026471f;
+    box-shadow: 0 0 30px 9px #ae98b41f;
+    /* box-shadow: 0 0 30px 9px #70607475; */
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 47px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative; 
+    font-size: 13px;  
+    font-weight: 500; 
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 170px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px ;
+    transition: .5s;   
+}
+.input-group{
+    top: 140px;
+    position: absolute;
+    width: 1100px;
+    transition: .5s;
+}
+.input-field{
+    width: 95%;
+    padding: 15px 0;
+    margin: 5px 0;
+    /* margin: auto; */
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    /* border: rgb(56, 53, 53); */
+}
+
+.flex-radio{
+    display: flex;
+    /* padding: 10px 10px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* justify-content: space-between; */
+    /* padding-right: 20px; */
+}
+/* .radio-btn{
+    padding: 10px 10px;
+    width: 20px;
+    margin: 10px 10px;
+} */
+.flex-radio input{
+    padding: 20px 20px;
+    width: 140px;
+}
+/* .dropDown label{
+    width: 500px;
+} */
+.dropDown{
+    width: 95%;
+    display: flex;
+    /* border: 2px white; */
+    /* justify-content: space-between; */
+}
+option{
+    color: black;
+}
+.dropDown select{
+    background: transparent;
+    padding: 10px 10px;
+    width: 100%;
+        /* border: 2px white;s */
+}
+.dropDown label{
+    width: 200px;
+    /* border: 2px solid white;
+    padding: 10px 8px; */
+}
+textarea{
+    resize: none;
+}
+
+.submit-btn{
+    width:50px;
+    height: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+  /* margin: auto; */
+  margin-top: 40px;
+  /* margin-right: 80px; */
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-size: 20px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e6f9ef4420.js" crossorigin="anonymous"></script>
+    <title>Doctor Searching</title>
+    <link rel="stylesheet" href="Search_Doctor.css">
+</head>
+<body>
+    <!-- ------Header Section------ -->
+    <section class="head">
+
+        <!-- -------Navbar------- -->
+        <nav id="navbar" class="sticky">
+            <a href="index.html" class="nav-logo">Medcares</a>
+            <div class="nav-links" id="navLinks">
+                <ul id="menu">
+				     <li><a href="Verification.html"><h4>Visit as a doctor</h4></a></li>
+                    <li><a href="Patient_Info.html"><h4>Update Profile</h4></a></li>
+					 <li><a href="Patient_Profile.html"><h4>My Profile</h4></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- --------Couple Searching div,it is made to search one's suitable match------- -->
+            <form method="POST" action="Search_Doctor.php" class="contain">
+                <h1>Search Doctors</h1>
+                
+                <div class="class1">
+                    <label for="searchM/F">Specialization &nbsp</label>
+                    <select name="Specialization" id="searchM/F" ">
+                        <option value="all" selected>All</option>
+                        <option value="Medicine Specialists" >Medicine Specialists</option>
+                        <option value="Allergists" >Allergists</option>
+                        <option value="Cardiologists">Cardiologists</option>
+                        <option value="Colon and Rectal Surgeons" >Colon and Rectal Surgeons</option>
+                        <option value="Dermatologists" >Dermatologists</option>
+						
+						 <option value="Endocrinologists" >Endocrinologists</option>
+                        <option value="Emergency Medicine Specialists" >Emergency Medicine Specialists</option>
+                        <option value="Gastroenterologists">Gastroenterologists</option>
+                        <option value="Hematologists" >Hematologists</option>
+                        <option value="Nephrologists" >Nephrologists</option>
+						
+						 <option value="Neurologists" >Neurologists</option>
+                        <option value="Obstetricians and Gynecologists" >Obstetricians and Gynecologists</option>
+                        <option value="Oncologists">Oncologists</option>
+                        <option value="Pathologists" >Pathologists</option>
+                        <option value="Plastic Surgeons" >Plastic Surgeons</option>
+						
+						<option value="Psychiatrists" >Psychiatrists</option>
+                        <option value="Radiologists" >Radiologists</option>
+                        <option value="Urologists">Urologists</option>
+                        <option value="General Surgeons" >General Surgeons</option>
+                        <option value="Pulmonologists" >Pulmonologists</option>
+						
+						
+                    </select>
+                </div>
+                <div class="class1">
+                    <label for="searchM/F">District&nbsp;</label>
+                    <select name="Address" id="searchM/F">
+                        <option value="all" selected>All</option>
+                        <option value="bagerhat" >Bagerhat</option>
+                        <option value="Bandarban" >Bandarban</option>
+                        <option value="Barguna" >Barguna </option>
+                        <option value="Barisal" >Barisal</option>
+                        <option value="Bhola" >Bhola</option>
+                        <option value="Bogra" >Bogra</option>
+                        <option value="Brahmanbaria" >Brahmanbaria</option>
+                        <option value="Chandpur" >Chandpur</option>
+                        <option value="Chapainawabganj" >Chapainawabganj </option>
+                        <option value="Chittagong" >Chittagong</option>
+                        <option value="Chuadanga" >Chuadanga </option>
+                        <option value="Comilla" >Comilla</option>
+                        <option value="Cox's Bazar" >Cox's Bazar </option>
+                        <option value="Dhaka" >Dhaka</option>
+                        <option value="Dinajpur" >Dinajpur</option>
+                        <option value="Faridpur" >Faridpur</option>
+                        <option value="Feni" >Feni</option>
+                        <option value="Gaibandha" >Gaibandha</option>
+                        <option value="Gazipur" >Gazipur</option>
+                        <option value="Gopalganj" >Gopalganj</option>
+                        <option value="Habiganj" >Habiganj</option>
+                        <option value="Jamalpur" >Jamalpur</option>
+                        <option value="Jessore" >Jessore</option>
+                        <option value="Jhalokati" >Jhalokati</option>
+                        <option value="Jhenaidah" >Jhenaidah</option>
+                        <option value="Joypurhat" >Joypurhat</option>
+                        <option value="Khagrachhari" >Khagrachhari</option>
+                        <option value="Khulna" >Khulna</option>
+                        <option value="Kishoreganj" >Kishoreganj </option>
+                        <option value="Kurigram" >Kurigram</option>
+                        <option value="Kushtia" >Kushtia</option>
+                        <option value="Lakshmipur" >Lakshmipur </option>
+                        <option value="Lalmonirhat" >Lalmonirhat</option>
+                        <option value="Madaripur" >Madaripur</option>
+                        <option value="Magura" >Magura</option>
+                        <option value="Manikganj" >Manikganj </option>
+                        <option value="Meherpur" >Meherpur</option>
+                        <option value="Moulvibazar" >Moulvibazar</option>
+                        <option value="Munshiganj" >Munshiganj </option>
+                        <option value="Mymensingh" >Mymensingh</option>
+                        <option value="Naogaon" >Naogaon</option>
+                        <option value="Narail" >Narail</option>
+                        <option value="Narayanganj" >Narayanganj</option>
+                        <option value="Narsingdi" >Narsingdi</option>
+                        <option value="Natore" >Natore</option>
+                        <option value="Netrokona" >Netrokona</option>
+                        <option value="Nilphamari" >Nilphamari</option>
+                        <option value="Noakhali" >Noakhali</option>
+                        <option value="Pabna" >Pabna</option>
+                        <option value="Panchagarh" >Panchagarh</option>
+                        <option value="Patuakhali" >Patuakhali</option>
+                        <option value="Pirojpur" >Pirojpur</option>
+                        <option value="Rajbari" >Rajbari</option>
+                        <option value="Rajshahi" >Rajshahi</option>
+                        <option value="Rangamati" >Rangamati</option>
+                        <option value="Rangpur" >Rangpur</option>
+                        <option value="Satkhira" >Satkhira</option>
+                        <option value="Shariatpur" >Shariatpur</option>
+                        <option value="Sherpur" >Sherpur</option>
+                        <option value="Sirajganj" >Sirajganj</option>
+                        <option value="Sunamganj" >Sunamganj</option>
+                        <option value="Sylhet" >Sylhet</option>
+                        <option value="Tangail" >Tangail</option>
+                        <option value="Thakurgaon" >Thakurgaon</option>
+                    </select>
+                </div>
+                <div>
+                    
+                    <button type ="submit" class="btn1"><i class="fa fa-search"></i>&nbsp&nbspSearch</button>
+                </div>
+            </form>
+			
+    </section>
+
+    
+</body>
+</html>
